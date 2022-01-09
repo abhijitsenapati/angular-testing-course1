@@ -28,7 +28,7 @@ module.exports = function (config) {
       dir : 'testresults',
       subdir:'coverage',
       file: 'code-coverage.xml'
-    }
+    },
     reporters: ['progress', 'kjhtml', 'coverage'],
     port: 9876,
     colors: true,
