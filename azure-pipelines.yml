@@ -21,3 +21,8 @@ steps:
     npm run test-headless
     npm run e2e
   displayName: 'npm install and build'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '**/testresults/coverage/code-coverage.xml'
