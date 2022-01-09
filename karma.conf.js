@@ -24,7 +24,7 @@ module.exports = function (config) {
       environment: 'dev'
     },
     coverageReporter: {
-      type : 'jacoco',
+      type : 'cobertura',
       dir : 'testresults',
       subdir:'coverage',
       file: 'code-coverage.xml'
