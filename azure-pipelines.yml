@@ -18,8 +18,8 @@ steps:
 - script: |
     npm install
     npm run build
-    npm run test-headless
     npm i karma-coverage
+    npm run test-headless
     npm run e2e
   displayName: 'npm install and build'
 
