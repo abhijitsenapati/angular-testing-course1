@@ -27,3 +27,8 @@ steps:
   inputs:
     codeCoverageTool: 'Cobertura'
     summaryFileLocation: '**/testresults/coverage/code-coverage.xml'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/testresults/coverage/code-coverage.xml'
