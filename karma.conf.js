@@ -29,6 +29,12 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: false    
+    coverageReporter: {
+      type : 'cobertura',
+      dir : 'testresults',
+      subdir:'coverage',
+      file: 'code-coverage.xml'
+    }
   });
 };
