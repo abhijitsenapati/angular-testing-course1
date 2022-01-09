@@ -23,6 +23,12 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+    coverageReporter: {
+      type : 'cobertura',
+      dir : 'testresults',
+      subdir:'coverage',
+      file: 'code-coverage.xml'
+    }
     reporters: ['progress', 'kjhtml', 'coverage'],
     port: 9876,
     colors: true,
@@ -30,11 +36,5 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false    
-    coverageReporter: {
-      type : 'cobertura',
-      dir : 'testresults',
-      subdir:'coverage',
-      file: 'code-coverage.xml'
-    }
   });
 };
